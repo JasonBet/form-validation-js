@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form novalidate>
+        <label for="mail">
+            <span>Please enter an email address:</span>
+            <input type="text" id="mail" name="mail" />
+            <span class="error" aria-live="polite"></span>
+        </label>
+        
+        
+        <label for="postal-code">Postal Code: </label>
+        <input type="text" id="postal-code" />
+        <label for="country">Country: </label>
+        <select id="country">
+          <option value="ch">Switzerland</option>
+          <option value="fr">France</option>
+          <option value="de">Germany</option>
+          <option value="nl">The Netherlands</option>
+        </select>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <label for="password-conf">Confirm Password</label>
+        <input type="password" name="password-conf" id="password-conf">
+        <input type="submit" value="Submit">
+      </form>
+      
+      <script src="script.js"></script>
+</body>
+</html>
