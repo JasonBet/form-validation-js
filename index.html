@@ -9,32 +9,33 @@
 <body>
     <form novalidate>
         <label for="email">Email:</label>
-        <input type="text" id="email" required>
+        <input type="email" id="email" required>
         <span class="error" aria-live="polite"></span>
-        
-        <label for="country">Country: </label>
-        <select id="country">
+      
+        <label for="country">Country:</label>
+        <select id="country" required>
+          <option value="">Select a country</option>
           <option value="ch">Switzerland</option>
           <option value="fr">France</option>
           <option value="de">Germany</option>
-          <option value="nl">The Netherlands</option>
+          <option value="nl">Netherlands</option>
         </select>
         <span class="error" aria-live="polite"></span>
-        
-        <label for="zip">Zip Code: </label>
-        <input type="text" id="zip">
+      
+        <label for="postal-code">Postal Code:</label>
+        <input type="text" id="postal-code" required>
         <span class="error" aria-live="polite"></span>
-        
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password">
+      
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
         <span class="error" aria-live="polite"></span>
-
-        <label for="confirmPassword">Confirm Password</label>
-        <input type="password" name="confirmPassword" id="confirmPassword">
+      
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" required>
         <span class="error" aria-live="polite"></span>
-
-        <input type="submit" value="Submit">
-      </form>
+      
+        <button type="submit">Submit</button>
+    </form>
       
       <script src="script.js"></script>
 </body>
