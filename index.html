@@ -8,15 +8,10 @@
 </head>
 <body>
     <form novalidate>
-        <label for="mail">
-            <span>Please enter an email address:</span>
-            <input type="text" id="mail" name="mail" />
-            <span class="error" aria-live="polite"></span>
-        </label>
+        <label for="email">Email:</label>
+        <input type="text" id="email" required>
+        <span class="error" aria-live="polite"></span>
         
-        
-        <label for="postal-code">Postal Code: </label>
-        <input type="text" id="postal-code" />
         <label for="country">Country: </label>
         <select id="country">
           <option value="ch">Switzerland</option>
@@ -24,10 +19,20 @@
           <option value="de">Germany</option>
           <option value="nl">The Netherlands</option>
         </select>
+        <span class="error" aria-live="polite"></span>
+        
+        <label for="zip">Zip Code: </label>
+        <input type="text" id="zip">
+        <span class="error" aria-live="polite"></span>
+        
         <label for="password">Password</label>
         <input type="password" name="password" id="password">
-        <label for="password-conf">Confirm Password</label>
-        <input type="password" name="password-conf" id="password-conf">
+        <span class="error" aria-live="polite"></span>
+
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" name="confirmPassword" id="confirmPassword">
+        <span class="error" aria-live="polite"></span>
+
         <input type="submit" value="Submit">
       </form>
       
